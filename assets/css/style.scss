@@ -64,3 +64,8 @@ input::-webkit-search-results-decoration{
 @import "post";
 @import "search";
 @import "darkmode";
+
+body {
+  background: #ffffff !important;  /* 흰색 배경 */
+  animation: none !important;      /* 모든 배경 애니메이션 비활성화 */
+}
