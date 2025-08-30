@@ -26,7 +26,7 @@
 
     svg { width:20px; }
 
-    &:hover { background-color:rgba(212, 201, 191, 0.7); }
+    &:hover { // [disabled-hover] background-// [disabled-hover] color:rgba(212, 201, 191, 0.7); }
   }
   #btn-nav { right:0; }
   #btn-search { right:38px; }
@@ -318,27 +318,4 @@
   margin-left:calc(#{$contentwd} + (100vw - #{$contentwd})/2);
 }
 
-}
-
-/* === Sidebar hover override === */
-/* hover 시 색/배경/테두리 제거, 밑줄은 유지 */
-.sidebar a:hover,
-.sidebar li:hover,
-.sidebar .category:hover,
-.sidebar .category-link:hover,
-.sidebar .nav-item:hover {
-  background: none !important;
-  color: inherit !important;
-  outline: none !important;
-  border: none !important;
-  box-shadow: none !important;
-  transform: none !important;
-  animation: none !important;
-}
-
-/* hover 시 글자에 밑줄은 유지 */
-.sidebar a:hover,
-.sidebar .category-link:hover,
-.sidebar .nav-item:hover {
-  text-decoration: underline !important;
 }
