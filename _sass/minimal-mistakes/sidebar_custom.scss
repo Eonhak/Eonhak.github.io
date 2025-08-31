@@ -1,65 +1,24 @@
 /* === Sidebar Custom Styling === */
 
-/* === Group title + one continuous vertical bar + subitems to the right === */
-
-/* reset: 사이드바에 남아있을지도 모를 보더/섀도우 제거 */
-.sidebar .nav__sub-title,
-.sidebar .nav__items, .sidebar .nav__items ul,
-.sidebar .nav__items li, .sidebar .nav__items a {
-  border: none !important;
-  border-left: none !important;
-  box-shadow: none !important;
-}
-
-/* 타이틀(예: Basics/Engines/Projects): 선 없음 */
+/* 타이틀(예: Basics, Engines, Projects) 아래 세로 라인 */
 .sidebar .nav__sub-title {
-  margin: 0.75rem 0 0.25rem 0 !important;
-  padding-left: 0 !important;
-  font-weight: 700 !important;
+  border: none !important;    /* 모든 선 제거 */
+  padding-left: 0.75rem;
+  margin: 0.5rem 0;
+  font-weight: bold;
+  font-size: 1rem;            /* 크기 (예: 1rem = 16px) */
+  text-transform: none;       /* 대문자 변환 없애기 */
 }
 
-/* 타이틀 바로 다음 목록(.nav__items) 왼쪽에만 연속 세로선 */
-.sidebar .nav__sub-title + .nav__items {
-  border-left: 3px solid #f4c9b0 !important;
-  margin-left: 0.25rem !important;
-  padding-left: 0.75rem !important;
+/* 서브아이템 목록 - 세로선 따라 정렬 */
+.sidebar .nav__items ul {
+  border-left: 6px solid #f4c9b0; /* 같은 라인 유지 */
+  margin-left: 0;                 /* 들여쓰기 제거 */
+  padding-left: 1rem;             /* 라인과 텍스트 사이 간격 */
   list-style: none;
+  font-size: 0.9rem;
+  font-weight: 400;
 }
-
-/* 항목 간격 */
-.sidebar .nav__sub-title + .nav__items > li {
-  margin: 0.3rem 0 !important;
+.sidebar .nav__items ul li {
+  margin: 0.25rem 0;
 }
-
-/* (선택) hover 시 밑줄만 */
-.sidebar .nav__sub-title + .nav__items > li > a:hover {
-  text-decoration: underline;
-}
-
-
-
-// /* 타이틀(예: Basics, Engines, Projects) 아래 세로 라인 */
-// .sidebar .nav__sub-title {
-//   //border-left: 3px solid #f4c9b0; /* 원하는 색상 */
-//   border: none !important;    /* 모든 선 제거 */
-//   padding-left: 0.75rem;
-//   margin: 0.5rem 0;
-//   font-weight: bold;
-//   //font-family: "Helvetica Neue", Arial, sans-serif;  /* 원하는 폰트 */
-//   font-size: 1rem;            /* 크기 (예: 1rem = 16px) */
-//   text-transform: none;       /* 대문자 변환 없애기 */
-// }
-
-// /* 서브아이템 목록 - 세로선 따라 정렬 */
-// .sidebar .nav__items ul {
-//   border-left: 6px solid #f4c9b0; /* 같은 라인 유지 */
-//   margin-left: 0;                 /* 들여쓰기 제거 */
-//   padding-left: 1rem;             /* 라인과 텍스트 사이 간격 */
-//   list-style: none;
-//   //font-family: "Noto Sans KR", sans-serif;  /* 한글 폰트 적용 예시 */
-//   font-size: 0.9rem;
-//   font-weight: 400;
-// }
-// .sidebar .nav__items ul li {
-//   margin: 0.25rem 0;
-// }
