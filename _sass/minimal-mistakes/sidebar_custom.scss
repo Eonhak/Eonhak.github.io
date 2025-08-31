@@ -3,9 +3,13 @@
 /* 타이틀(예: Basics, Engines, Projects) 아래 세로 라인 */
 .sidebar .nav__sub-title {
   //border-left: 3px solid #f4c9b0; /* 원하는 색상 */
+  border: none !important;    /* 모든 선 제거 */
   padding-left: 0.75rem;
   margin: 0.5rem 0;
   font-weight: bold;
+  //font-family: "Helvetica Neue", Arial, sans-serif;  /* 원하는 폰트 */
+  font-size: 1rem;            /* 크기 (예: 1rem = 16px) */
+  text-transform: none;       /* 대문자 변환 없애기 */
 }
 
 /* 서브아이템 목록 - 세로선 따라 정렬 */
@@ -14,6 +18,9 @@
   margin-left: 0;                 /* 들여쓰기 제거 */
   padding-left: 1rem;             /* 라인과 텍스트 사이 간격 */
   list-style: none;
+  //font-family: "Noto Sans KR", sans-serif;  /* 한글 폰트 적용 예시 */
+  font-size: 0.9rem;
+  font-weight: 400;
 }
 .sidebar .nav__items ul li {
   margin: 0.25rem 0;
