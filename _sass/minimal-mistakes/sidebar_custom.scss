@@ -2,12 +2,9 @@
 
 /* 타이틀(예: Basics, Engines, Projects) 아래 세로 라인 */
 .sidebar .nav__sub-title {
-  border: none !important;    /* 모든 선 제거 */
   padding-left: 0.75rem;
   margin: 0.5rem 0;
   font-weight: bold;
-  font-size: 1rem;            /* 크기 (예: 1rem = 16px) */
-  text-transform: none;       /* 대문자 변환 없애기 */
 }
 
 /* 서브아이템 목록 - 세로선 따라 정렬 */
@@ -16,8 +13,6 @@
   margin-left: 0;                 /* 들여쓰기 제거 */
   padding-left: 1rem;             /* 라인과 텍스트 사이 간격 */
   list-style: none;
-  font-size: 0.9rem;
-  font-weight: 400;
 }
 .sidebar .nav__items ul li {
   margin: 0.25rem 0;
