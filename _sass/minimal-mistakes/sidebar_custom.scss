@@ -1,8 +1,6 @@
 /* === Sidebar Custom Styling === */
 
-/* === Sidebar: title 옆엔 선 없음, title 바로 아래 UL 왼쪽에만 세로선 === */
-
-/* 0) 리셋: 이전에 남아있을 수 있는 보더 제거 */
+/* 리셋 */
 .sidebar .nav__list,
 .sidebar .nav__items,
 .sidebar .nav__items ul,
@@ -12,24 +10,23 @@
   box-shadow: none !important;
 }
 
-/* 1) 대타이틀(예: Basics/Engines/Projects) — 선 없음 */
+/* 타이틀 옆엔 선 없음 */
 .sidebar .nav__sub-title {
   margin: 0.75rem 0 0.25rem 0 !important;
   padding-left: 0 !important;
   font-weight: 700;
-  text-transform: none; /* 필요 시 */
 }
 
-/* 2) 대타이틀 바로 다음 목록에만 연속 세로선 적용 */
+/* 타이틀 바로 다음의 UL에만 세로선 */
 .sidebar .nav__sub-title + ul {
-  border-left: 3px solid #f4c9b0 !important; /* 연한 주황색 세로선 */
-  margin-left: 0.25rem !important;           /* 선의 시작 위치 */
-  padding-left: 0.75rem !important;          /* 선과 텍스트 간격 */
+  border-left: 3px solid #f4c9b0 !important;
+  margin-left: 0.25rem !important;
+  padding-left: 0.75rem !important;
   list-style: none;
 }
 
-/* 3) 서브 항목 간격 */
+/* 항목 간격 */
 .sidebar .nav__sub-title + ul > li { margin: 0.3rem 0 !important; }
 
-/* 4) (선택) hover 시 밑줄만 */
+/* (선택) hover 시 밑줄만 */
 .sidebar .nav__sub-title + ul > li > a:hover { text-decoration: underline; }
