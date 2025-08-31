@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Hak_Devlog"
+#title: "Hak_Devlog"
 permalink: /
 author_profile: true
 sidebar:

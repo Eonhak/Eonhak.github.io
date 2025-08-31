@@ -13,7 +13,7 @@ docs:
   - title: "TEST"
     children:
       - title: "TEST"
-        url: /TEST/
+        url: https://eonhak.github.io/TEST/
       # - title: "C/C++"
       #   url: /categories/c-cpp/
       # - title: "Algorithm"
@@ -26,4 +26,4 @@ docs:
   - title: "TEST2"
     children:
       - title: "TEST2"
-        url: /TEST2/
+        url: https://eonhak.github.io/TEST2/
