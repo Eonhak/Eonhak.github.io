@@ -8,3 +8,31 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
+
+docs:
+  - title: "Basics"
+    children:
+      - title: "Assembly Language"
+        url: /categories/assembly-language/
+      - title: "C/C++"
+        url: /categories/c-cpp/
+      - title: "Algorithm"
+        url: /categories/algorithm/
+      - title: "GitHub"
+        url: /categories/github/
+      - title: "Operating System"
+        url: /categories/operating-system/
+
+  - title: "Engines"
+    children:
+      - title: "Unreal Engine"
+        url: /categories/unreal-engine/
+
+  - title: "Projects"
+    children:
+      - title: "GitHub Blog"
+        url: /categories/github-blog/
+      - title: "Paper2D Training"
+        url: /categories/paper2d-training/
+      - title: "3D Game Training"
+        url: /categories/3d-game-training/
