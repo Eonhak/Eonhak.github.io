@@ -14,8 +14,8 @@ docs:
     children:
       - title: "TEST"
         url: https://eonhak.github.io/TEST/
-      # - title: "C/C++"
-      #   url: /categories/c-cpp/
+      - title: "C"
+        url: https://eonhak.github.io/C/
       # - title: "Algorithm"
       #   url: /categories/algorithm/
       # - title: "GitHub"
