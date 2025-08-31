@@ -347,3 +347,25 @@
     margin-inline-end: initial;
   }
 }
+
+/* === Sidebar Custom Styling === */
+
+/* 타이틀(예: Basics, Engines, Projects) 아래 세로 라인 */
+.sidebar .nav__sub-title {
+  border-left: 3px solid #f4c9b0; /* 원하는 색상 */
+  padding-left: 0.75rem;
+  margin: 0.5rem 0;
+  font-weight: bold;
+}
+
+/* 서브아이템 목록 - 세로선 따라 정렬 */
+.sidebar .nav__items ul {
+  border-left: 3px solid #f4c9b0; /* 같은 라인 유지 */
+  margin-left: 0;                 /* 들여쓰기 제거 */
+  padding-left: 1rem;             /* 라인과 텍스트 사이 간격 */
+  list-style: none;
+}
+.sidebar .nav__items ul li {
+  margin: 0.25rem 0;
+}
+
