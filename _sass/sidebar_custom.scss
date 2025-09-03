@@ -1,32 +1,31 @@
-/* 타이틀은 선 없음 + 가로 밑줄도 제거 */
+/* 타이틀은 선 없음 */
 .sidebar .nav__sub-title {
   border: none !important;
-  padding-left: 0 !important;
   margin: 0.75rem 0 0.25rem 0 !important;
+  padding-left: 0 !important;
   font-weight: 700;
 }
 
-/* 타이틀 바로 아래 목록: 세로선은 ::before로 그려 시작점을 아래로 내림 */
+/* ── 여기부터 교체 ─────────────────────────────────────────── */
 .sidebar .nav__sub-title + ul {
   position: relative;
-  margin-left: 0.25rem !important;
-  padding-left: 0.75rem !important;
-  border-left: 0 !important;  /* 기존 border-left 제거 */
+  margin-left: 0.5rem !important;     /* 전체 블록을 조금 오른쪽으로 */
+  padding-left: 1.4rem !important;    /* 선과 글자 사이 간격 (조절점) */
+  border-left: 0 !important;          /* 혹시 남은 보더 제거 */
   list-style: none;
 }
 
 .sidebar .nav__sub-title + ul::before {
   content: "";
   position: absolute;
-  left: -0.2rem;
-  top: 0.8rem;     /* ← 세로선 시작점을 아래로 내려 타이틀 옆에 안 보이게 */
-  bottom: 0.2rem;  /* 마지막 항목 끝나기 조금 위에서 끝나도록 */
-  width: 3px;
-  background: #f4c9b0;
-  border-radius: 2px; /* 모서리 조금 둥글게(선택) */
+  left: 0.95rem;     /* ← 선을 오른쪽으로 이동 (0.8~1.1rem 사이로 취향 조절) */
+  top: 0.2rem;       /* ← 선 시작을 더 위로 올리면 ‘더 길게’ 보임 (0~0.4rem 조절) */
+  bottom: 0.2rem;    /* ← 아래쪽도 여유 주어 길게 */
+  width: 4px;        /* 선 두께 (3~5px) */
+  background: #f4c9b0;  /* 색상 (원하면 #000으로 바꾸면 검은선) */
+  border-radius: 2px;
 }
+/* ─────────────────────────────────────────────────────────── */
 
-/* 항목 간격 + hover 밑줄만 */
 .sidebar .nav__sub-title + ul > li { margin: 0.3rem 0 !important; }
 .sidebar .nav__sub-title + ul > li > a:hover { text-decoration: underline; }
-
