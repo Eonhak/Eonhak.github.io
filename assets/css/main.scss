@@ -3,6 +3,33 @@
 search: false
 ---
 
+
+/* (선택) 웹폰트 등록 */
+@font-face{
+  font-family: 'SEBANGGothic';
+  src: url('{{ "/assets/fonts/SEBANGGothic.ttf" | relative_url }}') format('truetype');
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face{
+  font-family: 'SEBANGGothic';
+  src: url('{{ "/assets/fonts/SEBANGGothic.ttf" | relative_url }}') format('truetype');
+  font-weight: 700; font-style: normal; font-display: swap;
+}
+
+/* ★ 제목 전용 폰트 지정 (본문은 유지) */
+$header-font-family: 'SEBANGGothic', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+
+
+/* (선택) 일부 요소 보강이 필요하면 아래처럼 추가 */
+.page__title,
+.archive__item-title, .archive__item-title a,
+.site-title, .site-title a {
+  font-family: 'SEBANGGothic', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+
 @charset "utf-8";
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
