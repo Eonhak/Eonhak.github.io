@@ -13,9 +13,9 @@ docs:
   - title: "TEST"
     children:
       - title: "TEST"
-        url: https://eonhak.github.io/TEST/
+        url: /categories/TEST/
       - title: "C"
-        url: https://eonhak.github.io/C/
+        url: /categories/C/
       # - title: "Algorithm"
       #   url: /categories/algorithm/
       # - title: "GitHub"
@@ -26,4 +26,4 @@ docs:
   - title: "TEST2"
     children:
       - title: "TEST2"
-        url: https://eonhak.github.io/TEST2/
+        url: /categories/TEST2/
