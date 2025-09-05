@@ -29,7 +29,7 @@ $header-font-family: 'SEBANGGothic', system-ui, -apple-system, 'Segoe UI', Robot
 /* (선택) 일부 요소 보강이 필요하면 아래처럼 추가 */
 .page__title,
 .archive__item-title, .archive__item-title a,
-{
+.sidebar .nav__sub-title {
   font-family: 'SEBANGGothic', sans-serif;
   font-style: normal;
   font-weight: 700;
