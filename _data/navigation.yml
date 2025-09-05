@@ -13,7 +13,7 @@ docs:
   - title: "TEST"
     children:
       - title: "TEST"
-        url: /TEST/
+        url: /TEST/TEST/
       - title: "C"
         url: /categories/C/
       # - title: "Algorithm"
