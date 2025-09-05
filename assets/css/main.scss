@@ -19,14 +19,20 @@ search: false
 /* ★ 제목 전용 폰트 지정 (본문은 유지) */
 $header-font-family: 'SEBANGGothic', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 
+.site-title, .site-title a {
+    font-size: 1rem !important;     /* 작게 */
+    font-style: italic !important;   /* 기울임 */
+    line-height: 1.3;                 /* 가독성 보정(선택) */
+  }
 
 /* (선택) 일부 요소 보강이 필요하면 아래처럼 추가 */
 .page__title,
 .archive__item-title, .archive__item-title a,
-.site-title, .site-title a {
+{
   font-family: 'SEBANGGothic', sans-serif;
   font-style: normal;
   font-weight: 700;
+  font-size: 0.7rem !important;
 }
 
 
