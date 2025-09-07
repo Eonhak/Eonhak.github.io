@@ -37,9 +37,11 @@ $header-font-family: 'SEBANGGothic', system-ui, -apple-system, 'Segoe UI', Robot
   color: #000 !important;
 }
 
+/* ========================== 홈 전용 간격/사이즈 튜닝 ================================= */
+
 /* 아카이브 리스트 제목(홈/카테고리) 색/모양 */
-.archive__item-title,
-.archive__item-title a {
+.home-feed .archive__item-title,
+.home-feed .archive__item-title a {
   font-family: 'SEBANGGothic', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -47,37 +49,20 @@ $header-font-family: 'SEBANGGothic', system-ui, -apple-system, 'Segoe UI', Robot
   line-height: 1.3; 
   color: #2a00fd !important;       
   text-decoration: none;
+  margin: 0.6rem 0 !important;
 }
-.archive__item-title a:hover { color: #8899fd !important; }
+.home-feed .archive__item-title a:hover { color: #8899fd !important; }
 
-//.page__meta,
-//.page__meta * { 
-  //font-family: 'SEBANGGothic', sans-serif;
-  //font-style: normal;
-  //color: #666 !important; 
-//}        /* 날짜/메타 색 */
-
-//.archive__item-excerpt { 
-  //font-family: 'SEBANGGothic', sans-serif;
-  //font-style: normal;
-  //font-weight: 700;
-  //font-size: 0.6rem; 
-//}  /* 요약 가독성 */
-
-/* ========================== 홈 전용(방법 3) 간격/사이즈 튜닝 ================================= */
 
 /* 제목(H1)과 목록 사이 간격 */
 .home-feed .page__title { margin-bottom: 0.5rem !important; }
 .home-feed .archive     { margin-top: 0 !important; }
 
-/* 각 항목의 위아래 간격(기본이 널널하면 압축) */
-.home-feed .archive__item { margin: 0.6rem 0 !important; }
-
 /* 요약문(Excerpt) 사이즈/줄간격 */
 .home-feed .archive__item-excerpt {
   font-family: 'SEBANGGothic', sans-serif;
   font-style: normal;
-  font-size: 0.6rem !important;
+  font-size: 0.7rem !important;
   line-height: 1.7 !important;
   margin-top: 0.2rem !important;
 }
@@ -85,7 +70,9 @@ $header-font-family: 'SEBANGGothic', system-ui, -apple-system, 'Segoe UI', Robot
 /* 날짜/읽는시간(메타) 사이즈 */
 .home-feed .page__meta,
 .home-feed .page__meta * {
-  font-size: 0.85rem !important;
+  font-family: 'SEBANGGothic', sans-serif;
+  font-style: normal;
+  font-size: 0.7rem !important;
 }
 
 /* 항목 제목 사이즈/줄간격(반응형 예시: 최소~최대 사이) 
