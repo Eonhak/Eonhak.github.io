@@ -67,8 +67,13 @@ $header-font-family: 'SEBANGGothic', system-ui, -apple-system, 'Segoe UI', Robot
 .home .page__title { margin-bottom: 0.5rem !important; }
 .home .archive     { margin-top: 0 !important; }
 
-/* 홈의 자동 서브타이틀 h3(두 번째 Recent posts) 제거 */
-.home .archive__subtitle { display: none !important; }
+/* 두 번째 "Recent posts" (archive__subtitle) 숨기기 */
+.layout--home h2.archive__subtitle,
+.layout--home h3.archive__subtitle,
+.layout--home .archive__subtitle {
+  display: none !important;
+}
+
 
 @charset "utf-8";
 
