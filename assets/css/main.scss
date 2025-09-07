@@ -151,14 +151,13 @@ $header-font-family: 'SEBANGGothic', system-ui, -apple-system, 'Segoe UI', Robot
 .masthead__menu-item a {
   font-family: 'SEBANGGothic', sans-serif !important;  /* 원하는 폰트 */
   font-weight: 600;                                    /* 400~700 조절 */
-  font-size: 0.7rem;
   font-style: normal;
   letter-spacing: .02em;
 }
 
 .greedy-nav .visible-links a,
 .greedy-nav .hidden-links a {
-  font-size: 0.7rem;           /* 크기 조절 */
+  font-size: 0.7rem !important;           /* 크기 조절 */
   color: #000000;               /* 기본 색 */
   text-decoration: none;
 }
