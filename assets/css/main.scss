@@ -20,6 +20,8 @@ search: false
 $header-font-family: 'SEBANGGothic', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 
 .site-title, .site-title a {
+    font-family: 'SEBANGGothic', sans-serif;
+    font-style: normal;
     font-size: 1rem !important;     /* 작게 */
     font-style: italic !important;   /* 기울임 */
     line-height: 1.3;                 /* 가독성 보정(선택) */
@@ -27,7 +29,7 @@ $header-font-family: 'SEBANGGothic', system-ui, -apple-system, 'Segoe UI', Robot
   }
 
 /* (선택) 일부 요소 보강이 필요하면 아래처럼 추가 */
-.page__title
+.home-feed .page__title
 {
   font-family: 'SEBANGGothic', sans-serif;
   font-style: normal;
@@ -55,8 +57,8 @@ $header-font-family: 'SEBANGGothic', system-ui, -apple-system, 'Segoe UI', Robot
 
 
 /* 제목(H1)과 목록 사이 간격 */
-.home-feed .page__title { margin: 0.5rem !important; }
-.home-feed .archive     { margin: 0 !important; }
+.home-feed .page__title { margin-bottom: 0.5rem !important; }
+.home-feed .archive     { margin-top: 0 !important; }
 
 /* 요약문(Excerpt) 사이즈/줄간격 */
 .home-feed .archive__item-excerpt {
