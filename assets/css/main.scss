@@ -23,9 +23,9 @@ $header-font-family: 'SEBANGGothic', system-ui, -apple-system, 'Segoe UI', Robot
     font-family: 'SEBANGGothic', sans-serif;
     font-style: normal;
     font-size: 1rem !important;     /* 작게 */
-    font-weight: 800;
+    font-weight: 800 !important;
     font-style: italic !important;   /* 기울임 */
-    line-height: 2.0;                 /* 가독성 보정(선택) */
+    line-height: 2.0 !important;                 /* 가독성 보정(선택) */
     color: #000 !important;
   }
 
