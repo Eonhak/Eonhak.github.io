@@ -27,8 +27,8 @@ $header-font-family: 'SEBANGGothic', system-ui, -apple-system, 'Segoe UI', Robot
   }
 
 /* (선택) 일부 요소 보강이 필요하면 아래처럼 추가 */
-.page__title,
-.archive__item-title, .archive__item-title a {
+.page__title
+{
   font-family: 'SEBANGGothic', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -36,6 +36,22 @@ $header-font-family: 'SEBANGGothic', system-ui, -apple-system, 'Segoe UI', Robot
   line-height: 1.3;                 /* 가독성 보정(선택) */
 }
 
+/* 아카이브 리스트 제목(홈/카테고리) 색/모양 */
+.archive__item-title a {
+  color: #4122da !important;       
+  text-decoration: none;
+}
+.archive__item-title a:hover { color: #3c50c0 !important; }
+
+.page__meta { color: #666; }        /* 날짜/메타 색 */
+
+.archive__item-excerpt { 
+  font-family: 'SEBANGGothic', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.9rem; 
+  line-height: 1.3; 
+}  /* 요약 가독성 */
 
 @charset "utf-8";
 

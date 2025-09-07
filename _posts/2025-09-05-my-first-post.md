@@ -17,7 +17,7 @@ header:
 #   overlay_image: /assets/images/banner.jpg
 ---
 
-test 하는 중 입니다.
+test 하는 중 입니다. <!-- more -->
 
 ## 섹션 1
 - 리스트
