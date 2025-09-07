@@ -11,9 +11,9 @@ sidebar:
 toc: true
 toc_sticky: true
 excerpt: "Test 하는 중" #"요약문을 여기에 적으면 목록에 짧게 노출됩니다."
-header:
-    overlay_color: "#fff"
-    overlay_filter: "0.35"
+#header:
+#    overlay_color: "#fff"
+#    overlay_filter: "0.35"
 #   overlay_image: /assets/images/banner.jpg
 ---
 
