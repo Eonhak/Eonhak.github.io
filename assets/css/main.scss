@@ -34,6 +34,7 @@ $header-font-family: 'SEBANGGothic', system-ui, -apple-system, 'Segoe UI', Robot
   font-weight: 700;
   font-size: 0.9rem !important;
   line-height: 1.3;                 /* 가독성 보정(선택) */
+  color: #000 !important;
 }
 
 /* 아카이브 리스트 제목(홈/카테고리) 색/모양 */
@@ -49,31 +50,62 @@ $header-font-family: 'SEBANGGothic', system-ui, -apple-system, 'Segoe UI', Robot
 }
 .archive__item-title a:hover { color: #8899fd !important; }
 
-.page__meta,
-.page__meta * { 
+//.page__meta,
+//.page__meta * { 
+  //font-family: 'SEBANGGothic', sans-serif;
+  //font-style: normal;
+  //color: #666 !important; 
+//}        /* 날짜/메타 색 */
+
+//.archive__item-excerpt { 
+  //font-family: 'SEBANGGothic', sans-serif;
+  //font-style: normal;
+  //font-weight: 700;
+  //font-size: 0.6rem; 
+//}  /* 요약 가독성 */
+
+/* ========================== 홈 전용(방법 3) 간격/사이즈 튜닝 ================================= */
+
+/* 제목(H1)과 목록 사이 간격 */
+.home-feed .page__title { margin-bottom: 0.5rem !important; }
+.home-feed .archive     { margin-top: 0 !important; }
+
+/* 각 항목의 위아래 간격(기본이 널널하면 압축) */
+.home-feed .archive__item { margin: 0.6rem 0 !important; }
+
+/* 요약문(Excerpt) 사이즈/줄간격 */
+.home-feed .archive__item-excerpt {
   font-family: 'SEBANGGothic', sans-serif;
   font-style: normal;
-  color: #666 !important; 
-}        /* 날짜/메타 색 */
-
-.archive__item-excerpt { 
-  font-family: 'SEBANGGothic', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 0.6rem; 
-}  /* 요약 가독성 */
-
-/* 홈의 제목-목록 간격 조절 */
-.home .page__title { margin-bottom: 0.5rem !important; }
-.home .archive     { margin-top: 0 !important; }
-
-/* 두 번째 "Recent posts" (archive__subtitle) 숨기기 */
-.layout--home h2.archive__subtitle,
-.layout--home h3.archive__subtitle,
-.layout--home .archive__subtitle {
-  display: none !important;
+  font-size: 0.6rem !important;
+  line-height: 1.7 !important;
+  margin-top: 0.2rem !important;
 }
 
+/* 날짜/읽는시간(메타) 사이즈 */
+.home-feed .page__meta,
+.home-feed .page__meta * {
+  font-size: 0.85rem !important;
+}
+
+/* 항목 제목 사이즈/줄간격(반응형 예시: 최소~최대 사이) 
+.home-feed .archive__item-title,
+.home-feed .archive__item-title a,
+.home-feed .archive__item-title a:visited,
+.home-feed .archive__item-title a:active {
+  font-size: clamp(1.0rem, 2.6vw, 1.25rem) !important;  ≈ 16px ~ 20px 
+  line-height: 1.35 !important;
+  text-decoration: none;
+} */
+
+/* 필요 시: 제목 색/폰트(원하는 색/폰트로) */
+/*
+.home-feed .archive__item-title a { color: #ff6b00 !important; }
+.home-feed .archive__item-title a:hover { color: #e35d00 !important; }
+.home-feed .page__title { font-family: 'SEBANGGothic', sans-serif !important; }
+*/
+
+/* ======================================================================================== */
 
 @charset "utf-8";
 
