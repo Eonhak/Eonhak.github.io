@@ -98,13 +98,47 @@ $header-font-family: 'SEBANGGothic', system-ui, -apple-system, 'Segoe UI', Robot
   display: none !important;
 }
 
-/* 홈 피드 리스트 기본 구조 */
-.home-feed .home-feed-list { list-style: none; margin: 0; padding: 0; }
-.home-feed .home-feed-item { margin: 0.75rem 0 1rem; }
 
-/* 페이지 제목과 목록 간격 */
-.home-feed .page__title { margin-bottom: .5rem; }
+/* 리스트 항목이 가로폭을 온전히 쓰게 */
+.home-feed .archive,
+.home-feed .list__item,
+.home-feed .archive__item {
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;             /* flex 문맥일 때 폭 수축 허용 */
+}
 
+/* 제목: 말줄임/nowrap/좁은 폭 해제 + 정상 줄바꿈 */
+.home-feed .archive__item-title,
+.home-feed .archive__item-title a {
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
+  word-break: keep-all;                 /* 한글 단어 단위 줄바꿈 */
+}
+
+/* 메타: 한 줄로(줄바꿈 금지) + 약간만 여백 */
+.home-feed .page__meta {
+  white-space: nowrap !important;
+  margin: 0 0 .15rem 0 !important;
+}
+
+/* 제목/요약 간격 정리(원하면 값 더 줄여도 됨) */
+.home-feed .archive__item-title { margin: 0 0 .15rem 0 !important; }
+.home-feed .archive__item-excerpt { margin-top: .15rem !important; }
+
+/* 리스트 마커/들여쓰기 제거(불릿/네모 보이면) */
+.home-feed .archive,
+.home-feed .archive ul,
+.home-feed .archive li {
+  list-style: none !important;
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+}
 
 /* ======================================================================================== */
 
