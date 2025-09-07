@@ -23,8 +23,9 @@ $header-font-family: 'SEBANGGothic', system-ui, -apple-system, 'Segoe UI', Robot
     font-family: 'SEBANGGothic', sans-serif;
     font-style: normal;
     font-size: 1rem !important;     /* 작게 */
+    font-weight: 800;
     font-style: italic !important;   /* 기울임 */
-    line-height: 1.7;                 /* 가독성 보정(선택) */
+    line-height: 2.0;                 /* 가독성 보정(선택) */
     color: #000 !important;
   }
 
@@ -35,7 +36,7 @@ $header-font-family: 'SEBANGGothic', system-ui, -apple-system, 'Segoe UI', Robot
   font-style: normal;
   font-weight: 700;
   font-size: 0.9rem !important;
-  line-height: 1.5;                 /* 가독성 보정(선택) */
+  line-height: 2.0;                 /* 가독성 보정(선택) */
   color: #000 !important;
 }
 
@@ -98,7 +99,7 @@ $header-font-family: 'SEBANGGothic', system-ui, -apple-system, 'Segoe UI', Robot
   display: none !important;
 }
 
-
+/* =================================== 검증 필요 ============================================*/
 /* 리스트 항목이 가로폭을 온전히 쓰게 */
 .home-feed .archive,
 .home-feed .list__item,
@@ -138,6 +139,32 @@ $header-font-family: 'SEBANGGothic', system-ui, -apple-system, 'Segoe UI', Robot
   list-style: none !important;
   margin-left: 0 !important;
   padding-left: 0 !important;
+}
+
+/* ======================================================================================== */
+
+/* ==================================== 홈 우측 탭 ========================================== */
+/* 헤더(우측 메뉴) 폰트/크기/색 */
+.masthead .site-title,
+.greedy-nav .visible-links a,
+.greedy-nav .hidden-links a,
+.masthead__menu-item a {
+  font-family: 'SEBANGGothic', sans-serif !important;  /* 원하는 폰트 */
+  font-weight: 600;                                    /* 400~700 조절 */
+  font-style: normal;
+  letter-spacing: .02em;
+}
+
+.greedy-nav .visible-links a,
+.greedy-nav .hidden-links a {
+  font-size: 1.0rem;           /* 크기 조절 */
+  color: #000000;               /* 기본 색 */
+  text-decoration: none;
+}
+.greedy-nav .visible-links a:hover,
+.greedy-nav .hidden-links a:hover,
+.masthead__menu-item--active a {
+  color: #7f7f7f;               /* hover/활성 색 */
 }
 
 /* ======================================================================================== */

@@ -4,8 +4,8 @@ main:
     url: https://eonhak.github.io/about/
   - title: "GitHub"
     url: https://github.com/Eonhak
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
+  - title: "Blog"
+    url: https://blog.naver.com/cocomo2334
   # - title: "Sitemap"
   #   url: /sitemap/
 
