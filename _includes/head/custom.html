@@ -3,4 +3,11 @@
 <!-- insert favicons. use https://realfavicongenerator.net/ -->
 
 <!-- end custom head snippets -->
+
+{%- if page.url == "/" -%}
+  {%- assign new_title = "Hak Devlog" -%}
+  <!-- jekyll-seo-tag가 만든 <title> 뒤에서 다시 정의해서 탭 제목을 강제 변경 -->
+  <title>{{ new_title }}</title>
+{%- endif -%}
+
 <link rel="icon" href="{{ '/assets/images/Profile.jpg' | relative_url }}">
