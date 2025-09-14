@@ -80,7 +80,7 @@ $header-font-family: 'SEBANGGothic', system-ui, -apple-system, 'Segoe UI', Robot
 .home-feed .page__meta * {
   font-family: 'SEBANGGothic', sans-serif !important;
   font-style: normal !important;
-  font-size: 0.7rem !important;
+  font-size: 0.5rem !important;
   color: #666 !important;
 }
 
@@ -94,10 +94,10 @@ $header-font-family: 'SEBANGGothic', system-ui, -apple-system, 'Segoe UI', Robot
 }
 
 /* 메타 아이콘(시계 모양)이 네모로 보이면 숨김 */
-.home-feed .page__meta i,
-.home-feed .page__meta svg {
-  display: none !important;
-}
+// .home-feed .page__meta i,
+// .home-feed .page__meta svg {
+//   display: none !important;
+// }
 
 /* =================================== 검증 필요 ============================================*/
 /* 리스트 항목이 가로폭을 온전히 쓰게 */
