@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "Recent Posts"
+seo_title: "Hak Devlog"
 author_profile: true
 classes: home-feed   # ← 추가
 sidebar:
